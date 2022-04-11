@@ -1,0 +1,62 @@
+/*************************************************/
+/* SCREEN BREAKPOINTS */
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1336px,
+        xxxl: 1740px,
+);
+
+/*************************************************/
+/* FONTS */
+$font-sans-serif: 'Monument Grotesk', sans-serif;
+$font-gruen: 'Monument Grotesk', sans-serif;
+$font-vinyl: 'Monument Grotesk', sans-serif;
+$font-size-root: 16px;
+
+/*************************************************/
+/* COLORS */
+$dark-brown: #292530;
+$light-brown: #766f72;
+$lighter-brown: #cca79d;
+$brown: #9d5654;
+$green: #233646;  ;
+$white: #fff;
+
+$colors: (
+        'black': black,
+        'white': $white,
+        'brown': $brown,
+        'dark-brown': $dark-brown,
+        'light-brown': $light-brown,
+        'lighter-brown': $lighter-brown,
+        'green': $green,
+);
+
+/*************************************************/
+/* IMAGES */
+$images: '../images';
+$fonts: '../fonts';
+
+/*************************************************/
+/* SPACINGS */
+$gutter: 60px;
+$gutter-md: 30px;
+$gutter-sm: 15px;
+
+$input-height: 40px;
+$header-height-mobile: 50px;
+
+$screen-admin-min: 783px;
+$screen-inner-content: 1000px;
+
+$g-admin-bar-small: 32px;
+$g-admin-bar-large: 46px;
+
+$letter-spacing: 0.4em;
+$letter-spacing-md: 0.2em;
+$letter-spacing-sm: 0.1em;
+$letter-spacing-xs: 0.05em;

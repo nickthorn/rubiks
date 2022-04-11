@@ -1,0 +1,77 @@
+.btn {
+  width: max-content;
+  font-size: rem(14px);
+  white-space: nowrap;
+  padding: 0 20px;
+  text-decoration: none !important;
+  display: inline-block;
+  text-align: center;
+  text-shadow: none;
+  border: 0;
+  position: relative;
+  border-radius: 25px;
+  font-weight: bold;
+  font-family: "Syne", sans-serif;
+  @include st-transition();
+
+  @include media-breakpoint-down(lg) {
+    height: 50px;
+    line-height: 50px;
+  }
+
+  &.btn-block,
+  &.btn-fullwidth {
+    width: 100% !important;
+  }
+
+  &.btn-white {
+    margin-top: 35px;
+    line-height: 1;
+    height: 35px;
+    min-width: 120px;
+    color: #ffffff;
+    border-radius: 0;
+    border: 1px solid #fff;
+
+    &:hover {
+      color: #000;
+      background-color: #fff;
+    }
+  }
+}
+
+form {
+  input {
+    color: #fff;
+    display: block;
+    width: 250px;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: #fff;
+    border-width: 0.25px;
+    padding-left: 0;
+    padding-bottom: 3px;
+    margin-bottom: 20px;
+
+    &::placeholder {
+      color: #fff;
+    }
+  }
+
+  textarea {
+    color: #fff;
+    display: block;
+    width: 250px;
+    border: none;
+    background: url("#{$images}/line-2.png") repeat-y;
+    line-height: 31px;
+    background-size: 100% 31px;
+
+    &::placeholder {
+      font-size: rem(14px);
+      color: #fff;
+    }
+  }
+}
