@@ -2196,7 +2196,7 @@ h5, .h5,
 h6, .h6 {
   font-family: "Monument Grotesk", sans-serif;
   margin-bottom: 20px;
-  letter-spacing: -1px;
+  letter-spacing: 0px;
 }
 
 h1, .h1 {
