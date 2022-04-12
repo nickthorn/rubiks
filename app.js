@@ -1,5 +1,5 @@
 function openNav() {
-  document.querySelector('.section-banner__sidebar').style.width = '400px';
+  document.querySelector('.section-banner__sidebar').style.width = '500px';
   document.querySelector('body').style.overflow = 'hidden';
 }
 
