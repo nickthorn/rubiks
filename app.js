@@ -20,6 +20,8 @@ const handleSubmit = (e) => {
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: new URLSearchParams(formData).toString(),
   })
-    .then(() => console.log("Form successfully submitted"))
+    .then(() => {
+      document.querySelectory('.section-banner__sidebar-form').innerHtml = '<p class="form-confirmation">Thanks. A member of the team will be in touch soon.</p>';
+    })
     .catch((error) => alert(error));
 };
