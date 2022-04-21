@@ -17,11 +17,11 @@
       </a>
 
       <div class="section-banner__sidebar-form">
-        <form action="">
-          <input type="text" placeholder="Name">
-          <input type="text" placeholder="Number">
-          <input type="text" placeholder="Email">
-          <textarea rows="5" cols="20" placeholder="Message"></textarea>
+        <form id="enquiry" name="enquiry" method="POST" data-netlify="true">
+          <input name="name" type="text" placeholder="Name" required>
+          <input name="phone" type="text" placeholder="Number" required>
+          <input name="email" type="email" placeholder="Email" required>
+          <textarea name="message" rows="5" cols="20" placeholder="Message"></textarea>
           <button class="btn btn-white" type="submit">Send</button>
         </form>
 
@@ -116,7 +116,7 @@
 
       <div class="footer__wrapper-tel">
         <a class="tel" href="tel:0404 977 313">0404 977 313</a>
-        <p>kk@rubikscubed.co</p>
+        <a target="_blank"href="mailto:kk@rubikscubed.co">kk@rubikscubed.co</a>
         <a target="_blank" href="http://www.rubikscubed.co/">rubikscubed.co</a>
       </div>
     </div>
