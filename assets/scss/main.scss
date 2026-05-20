@@ -99,15 +99,15 @@
 
     img {
       @include media-breakpoint-up(sm) {
-        height: 215px;
+        height: 105px;
       }
 
       @include media-breakpoint-up(md) {
-        height: 275px;
+        height: 135px;
       }
 
       @include media-breakpoint-up(xl) {
-        height: 175px;
+        height: 85px;
       }
     }
   }

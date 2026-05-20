@@ -2545,17 +2545,17 @@ form textarea::placeholder {
 }
 @media (min-width: 576px) {
   .section-banner__logo img {
-    height: 150px;
+    height: 105px;
   }
 }
 @media (min-width: 768px) {
   .section-banner__logo img {
-    height: 193px;
+    height: 135px;
   }
 }
 @media (min-width: 1200px) {
   .section-banner__logo img {
-    height: 122px;
+    height: 85px;
   }
 }
 .section-banner__control {
