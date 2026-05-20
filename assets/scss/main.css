@@ -2181,7 +2181,7 @@ html {
 
 body {
   font-size: 0.875rem;
-  color: #292530;
+  color: #1B1B1B;
   font-family: "Helvetica", sans-serif;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
@@ -2414,7 +2414,7 @@ iframe {
 form input {
   color: #fff;
   display: block;
-  width: 250px;
+  width: 480px;
   background-color: transparent;
   border-top: none;
   border-left: none;
@@ -2431,11 +2431,17 @@ form input::placeholder {
 form textarea {
   color: #fff;
   display: block;
-  width: 250px;
+  width: 480px;
   border: none;
-  background: url("../images/line-2.png") repeat-y;
+  background-color: transparent;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 30px,
+    rgba(255, 255, 255, 0.4) 30px,
+    rgba(255, 255, 255, 0.4) 31px
+  );
   line-height: 31px;
-  background-size: 100% 31px;
 }
 form textarea::placeholder {
   font-size: 0.875rem;
@@ -2469,13 +2475,24 @@ form textarea::placeholder {
   height: 100%;
   object-fit: cover;
 }
+.section-banner .banner-video--desktop {
+  display: none;
+}
+@media (min-width: 768px) {
+  .section-banner .banner-video--desktop {
+    display: block;
+  }
+  .section-banner .banner-video--mobile {
+    display: none;
+  }
+}
 .section-banner__sidebar {
   height: 100%;
   width: 0;
   position: fixed;
   top: 0;
   right: 0;
-  background-color: #000;
+  background-color: #5D625B;
   overflow-x: hidden;
   transition: 0.5s;
   padding: 60px 0 40px;
@@ -2528,17 +2545,17 @@ form textarea::placeholder {
 }
 @media (min-width: 576px) {
   .section-banner__logo img {
-    height: 215px;
+    height: 150px;
   }
 }
 @media (min-width: 768px) {
   .section-banner__logo img {
-    height: 275px;
+    height: 193px;
   }
 }
 @media (min-width: 1200px) {
   .section-banner__logo img {
-    height: 175px;
+    height: 122px;
   }
 }
 .section-banner__control {
@@ -2641,7 +2658,7 @@ form textarea::placeholder {
   left: 0;
   height: 13px;
   width: 37px;
-  background-color: #A4EDDD;
+  background-color: #CACCBE;
 }
 .section-about__content p {
   line-height: 1.1;
@@ -2681,6 +2698,7 @@ form textarea::placeholder {
 
 .footer {
   padding: 55px 0;
+  background-color: #5D625B;
 }
 @media (min-width: 768px) {
   .footer__wrapper {
@@ -2696,14 +2714,14 @@ form textarea::placeholder {
   }
 }
 .footer__wrapper-logo img {
-  height: 115px;
+  height: 40px;
   margin-bottom: 70px;
 }
 @media (min-width: 768px) {
   .footer__wrapper-logo img {
     margin-bottom: 0;
     margin-right: 80px;
-    height: 80px;
+    height: 28px;
   }
 }
 .footer__wrapper-tel {
