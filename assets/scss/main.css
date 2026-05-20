@@ -2543,9 +2543,13 @@ form textarea::placeholder {
   align-items: center;
   text-align: center;
 }
+.section-banner__logo img {
+  max-width: 75%;
+}
 @media (min-width: 576px) {
   .section-banner__logo img {
-    height: 105px;
+    max-width: 100%;
+    height: 79px;
   }
 }
 @media (min-width: 768px) {
@@ -2570,8 +2574,13 @@ form textarea::placeholder {
 }
 .section-banner__control p {
   color: #fff;
-  font-size: 1.25rem;
+  font-size: 0.9375rem;
   margin-bottom: 40px;
+}
+@media (min-width: 768px) {
+  .section-banner__control p {
+    font-size: 1.25rem;
+  }
 }
 .section-banner__control img {
   height: 25px;
