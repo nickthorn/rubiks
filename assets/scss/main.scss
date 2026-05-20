@@ -238,9 +238,8 @@
 .section-personal {
   padding-bottom: 100px;
 
-  p {
+  .section-about__content {
     @include media-breakpoint-up(lg) {
-      margin-bottom: 0;
       column-count: 2;
     }
 
@@ -248,8 +247,20 @@
       -webkit-column-gap: 70px;
       -moz-column-gap: 70px;
       column-gap: 70px;
-      margin-bottom: 0;
-      column-count: 2;
+    }
+
+    p {
+      break-inside: avoid;
+    }
+
+    @include media-breakpoint-up(lg) {
+      h4 {
+        column-span: all;
+      }
+
+      p:nth-of-type(2) {
+        break-after: column;
+      }
     }
   }
 }

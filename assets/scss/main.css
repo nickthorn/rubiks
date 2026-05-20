@@ -2680,19 +2680,25 @@ form textarea::placeholder {
 .section-personal {
   padding-bottom: 100px;
 }
+.section-personal .section-about__content p {
+  break-inside: avoid;
+}
 @media (min-width: 992px) {
-  .section-personal p {
-    margin-bottom: 0;
+  .section-personal .section-about__content {
     column-count: 2;
+  }
+  .section-personal .section-about__content h4 {
+    column-span: all;
+  }
+  .section-personal .section-about__content p:nth-of-type(2) {
+    break-after: column;
   }
 }
 @media (min-width: 1200px) {
-  .section-personal p {
+  .section-personal .section-about__content {
     -webkit-column-gap: 70px;
     -moz-column-gap: 70px;
     column-gap: 70px;
-    margin-bottom: 0;
-    column-count: 2;
   }
 }
 
